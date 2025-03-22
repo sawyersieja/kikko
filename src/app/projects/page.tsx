@@ -1,4 +1,4 @@
-import ProjectCard from "../components/ProjectCard";
+import ProjectCard from "./ProjectCard";
 
 const projects = [
     { title: "Portfolio Website", description: "A personal portfolio built with Next.js.", link: "https://example.com" },

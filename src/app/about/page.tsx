@@ -1,8 +1,18 @@
-export default function About() {
+import AboutSummary from "./AboutSummary";
+import CTA from "./CTA";
+import Experience from "./Experience";
+import Skills from "./Skills";
+
+const About = () => {
     return(
-        <main>
-            <h1>About Me</h1>
-            <p>This is the about page for my portfolio.</p>
+        <main className="max-w-3xl mx-auto p-8">
+            <h1 className="text-4xl font-fold">About Me</h1>
+            <AboutSummary />
+            <Skills />
+            <Experience />
+            <CTA />
         </main>
     );
-}
+};
+
+export default About;

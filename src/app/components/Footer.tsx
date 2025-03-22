@@ -4,7 +4,7 @@ const Footer = () => {
             <p>@ {new Date().getFullYear()} Sawyer Sieja. All rights reserved.</p>
             <div className="flex justify-center space-x-4 mt-2">
                 <a href="https://github.com/sawyersieja" target="_blank">GitHub</a>
-                {/* <a href="mailto:your@email.com">Email</a> */}
+                <a href="/contact">Email</a>
             </div>
         </footer>
     );
