@@ -40,9 +40,6 @@ const Contact = () => {
 
             {status && <p className="mt-4 text-sm text-green-600">{status}</p>} {/* Show status message */}
         </main>
-
-
-        
     </>
     );
 };
