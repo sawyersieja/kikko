@@ -1,6 +1,8 @@
 const AboutSummary = () => {
     return(
-        <></>
+        <section>
+            
+        </section>
     );
 };
 

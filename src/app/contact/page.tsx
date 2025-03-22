@@ -23,7 +23,7 @@ const Contact = () => {
     };
 
     return (
-    <>
+    
         <main className="max-w-md mx-auto p-8">
             <h1 className="text-3xl font-bold">Contact Me</h1>
             <p className="text-gray-600">Fill out the form below to send me a message.</p>
@@ -40,7 +40,7 @@ const Contact = () => {
 
             {status && <p className="mt-4 text-sm text-green-600">{status}</p>} {/* Show status message */}
         </main>
-    </>
+    
     );
 };
 
