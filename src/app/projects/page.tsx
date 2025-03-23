@@ -1,6 +1,13 @@
 import ProjectCard from "./ProjectCard";
 
-const projects = [
+interface Project {
+    title: string;
+    description: string;
+    tech: string[];
+    link: string;
+}
+
+const projects: Project[] = [
     {   
         title: "Portfolio Website",
         description: "A personal portfolio project built with Next.js.",
