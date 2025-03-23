@@ -1,6 +1,6 @@
 const Skills = () => {
 
-    const skills = {
+    const skills: { frequent: string[], improving: string[] } = {
         frequent: ["C++", "Java", "HTML", "CSS", "JavaScript"],
         improving: ["TypeScript", "Rust", "Solidity", "React", "Next.js", "Tailwind"]
     };
