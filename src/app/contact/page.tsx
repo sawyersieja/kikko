@@ -25,10 +25,10 @@ const Contact = () => {
     return (
     
         <main className="max-w-md mx-auto p-8">
-            <h1 className="text-3xl font-bold">Contact Me</h1>
-            <p className="text-gray-600">Fill out the form below to send me a message.</p>
+            <h1 className="text-3xl font-bold mb-2">Contact Me</h1>
+            <p className="text-gray-300 mb-4">Fill out the form below to send me a message.</p>
 
-            <form onSubmit={handleSubmit} className="mt-4">
+            <form onSubmit={handleSubmit}>
                 <label className="block mb-2">Email:</label>
                 <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required className="w-full p-2 border rounded-md" />
 
