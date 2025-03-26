@@ -56,11 +56,11 @@ const Projects = () => {
     return(
         <main className="max-w-4xl mx-auto p-8">
             <h1 className="text-4xl font-bold">Projects</h1>
-            <p className="text-gray-600">Here are some of the projects I&apos;ve worked on.</p>
+            <p className="text-gray-300">Here are some of the projects I&apos;ve worked on.</p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
                 {projects.map((project, index) => (
-                    <ProjectCard key={index} {...project} />
+                    <ProjectCard key={index} {...project}/>
                 ))}
             </div>
         </main>
