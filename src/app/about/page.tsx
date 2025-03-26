@@ -6,7 +6,7 @@ import Skills from "./Skills";
 const About = () => {
     return(
         <main className="max-w-3xl mx-auto p-8">
-            <h1 className="text-4xl font-fold">About Me</h1>
+            <h1 className="text-4xl font-fold pb-6">About Me</h1>
             <AboutSummary />
             <Skills />
             <Experience />
