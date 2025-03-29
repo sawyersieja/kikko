@@ -25,7 +25,7 @@ export default function RootLayout({
       <body className={`${inter.variable} flex flex-col min-h-screen`}>
         <Navbar />
         <main className="flex flex-grow flex-col">
-          <Container className="flex-1 flex flex-col justify-center">
+          <Container className="flex-1 flex flex-col">
             {children}
           </Container>
         </main>
