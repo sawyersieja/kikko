@@ -23,24 +23,22 @@ const Contact = () => {
     };
 
     return (
-    
-        <main className="max-w-md mx-auto p-8">
-            <h1 className="text-3xl font-bold mb-2">Contact Me</h1>
-            <p className="text-gray-300 mb-4">Fill out the form below to send me a message.</p>
+            <>
+                <h1 className="text-4xl font-bold pb-6">Contact Me</h1>
+                <p className="text-gray-300 mb-4">Fill out the form below to send me a message.</p>
 
-            <form onSubmit={handleSubmit}>
-                <label className="block mb-2">Email:</label>
-                <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required className="w-full p-2 border rounded-md" />
+                <form onSubmit={handleSubmit}>
+                    <label className="block mb-2">Email:</label>
+                    <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required className="w-full p-2 border rounded-md" />
 
-                <label className="block mt-4 mb-2">Message:</label>
-                <textarea value={message} onChange={(e) => setMessage(e.target.value)} required className="w-full p-2 border rounded-md"></textarea>
+                    <label className="block mt-4 mb-2">Message:</label>
+                    <textarea value={message} onChange={(e) => setMessage(e.target.value)} required className="w-full p-2 border rounded-md"></textarea>
 
-                <button type="submit" className="mt-4 bg-blue-600 text-white px-4 py-2 rounded-md">Send</button>
-            </form>
+                    <button type="submit" className="mt-4 bg-blue-600 text-white px-4 py-2 rounded-md">Send</button>
+                </form>
 
-            {status && <p className="mt-4 text-sm text-green-600">{status}</p>} {/* Show status message */}
-        </main>
-    
+                {status && <p className="mt-4 text-sm text-green-600">{status}</p>} {/* Show status message */}
+            </>
     );
 };
 
