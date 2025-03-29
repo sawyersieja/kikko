@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { Inter } from "next/font/google";
+import Container from "./components/Container";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -20,10 +21,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en-US">
       <body className={`${inter.variable} flex flex-col min-h-screen`}>
         <Navbar />
-        <main className="flex-grow">{children}</main>
+        <main className="flex-grow">
+          <Container>
+            {children}
+          </Container>
+        </main>
         <Footer />
       </body>
     </html>

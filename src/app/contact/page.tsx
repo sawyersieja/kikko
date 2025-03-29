@@ -1,7 +1,6 @@
 "use client"; //Needed for form state in Next.js App Router
 
 import { useState } from "react";
-import Container from "../components/Container";
 
 const Contact = () => {
 
@@ -24,9 +23,7 @@ const Contact = () => {
     };
 
     return (
-    
-        <main>
-            <Container>
+            <>
                 <h1 className="text-4xl font-bold pb-6">Contact Me</h1>
                 <p className="text-gray-300 mb-4">Fill out the form below to send me a message.</p>
 
@@ -41,9 +38,7 @@ const Contact = () => {
                 </form>
 
                 {status && <p className="mt-4 text-sm text-green-600">{status}</p>} {/* Show status message */}
-            </Container>
-        </main>
-    
+            </>
     );
 };
 
