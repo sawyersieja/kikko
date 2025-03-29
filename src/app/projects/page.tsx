@@ -1,4 +1,3 @@
-import Container from "../components/Container";
 import ProjectCard from "./ProjectCard";
 
 interface Project {
