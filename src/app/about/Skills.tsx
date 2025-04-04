@@ -7,7 +7,7 @@ const Skills = () => {
 
     return (
         <section>
-            <h2 className="text-2xl font-semibold mb-4">Technical Skills</h2>
+            <h2 className="text-2xl font-semibold mb-2">Technical Skills</h2>
 
             <h3 className="text-xl font-medium mb-4 !text-blue-300">Competent</h3>
             <div className="flex flex-wrap gap-2">
@@ -28,7 +28,7 @@ const Skills = () => {
             </div>
 
             <h3 className="text-xl font-medium mt-6 mb-2">Additional Exposure</h3>
-            <p className="mb-4">Some experience with Web3 technologies, UI/UX, and minimal cloud development.</p>  
+            <p className="mb-6">Some experience with Web3 technologies, UI/UX, and minimal cloud development.</p>  
                    
         </section>
     );
