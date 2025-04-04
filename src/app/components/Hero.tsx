@@ -13,7 +13,7 @@ const Hero = () => {
                 <p className="mt-4 text-base sm:text-xl text-gray-300">
                     I build practical software that solves real problems - clean, secure, and user-focused.
                 </p>
-                <a href="/projects" className="mt-6 inline-block px-6 py-3 bg-blue-600 hover:bg-blue-500 transition-colors rounded-lg font-medium animate-pulse hover:animate-none">
+                <a href="/projects" className="mt-6 inline-block px-6 py-3 bg-blue-700 hover:bg-blue-600 transition-colors rounded-lg font-medium animate-pulse hover:animate-none">
                     See My Work
                 </a>
             </div>
