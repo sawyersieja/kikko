@@ -1,7 +1,7 @@
 const Hero = () => {
     return (
         <section 
-        className="relative bg-cover bg-center bg-no-repeat min-h-[80vh] flex-1 flex flex-col justify-center bg-gray-800 text-white text-center px-4"
+        className="relative bg-cover bg-center bg-no-repeat flex-1 flex flex-col justify-center text-white text-center px-4"
         style={{ backgroundImage: "url('/images/hero-mountain.jpg')"}}
         >
             <div className="absolute backdrop-blur-xs inset-0 bg-black/30 z-0" />
