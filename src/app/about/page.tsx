@@ -1,6 +1,6 @@
 import AboutSummary from "./AboutSummary";
 import CTA from "./CTA";
-import Experience from "./Experience";
+import Highlights from "./Highlights";
 import Skills from "./Skills";
 
 const About = () => {
@@ -9,7 +9,7 @@ const About = () => {
             <h1 className="text-4xl font-fold mt-10 mb-6">About Me</h1>
             <AboutSummary />
             <Skills />
-            <Experience />
+            <Highlights />
             <CTA />
         </>
     );
