@@ -43,12 +43,7 @@ const projects: Project[] = [
         tech: ["React", "JavaScript", "Solidity", "C++", "ethers.js"],
         link: "https://github.com/kitfud/Fluther",
     },
-    {
-        title: "CSUSM Cybersecurity Club",
-        description: "A clean, static resource hub for my university's cybersecurity club. Built to share tools, links, and meeting info with students in a lightweight, mobile-friendly format.",
-        tech: ["HTML", "Tailwind", "JavaScript"],
-        link: "https://csusmcsc.github.io",
-    },
+    
 ];
 
 const Projects = () => {
