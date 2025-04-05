@@ -31,10 +31,10 @@ const ContactForm = () => {
                     <label className="block mt-4 mb-2">Message:</label>
                     <textarea value={message} onChange={(e) => setMessage(e.target.value)} required className="w-full p-2 border border-gray-300 rounded-md h-50 transition-all duration-500 focus:outline-none focus:border-blue-400 focus:ring-1 focus:ring-blue-400 focus:ring-opacity-50"></textarea>
 
-                    <button type="submit" className="mt-4 bg-blue-600 text-white px-4 py-2 rounded-md">Send</button>
+                    <button type="submit" className="mt-6 mb-10 bg-blue-600 text-white px-4 py-2 rounded-md">Send</button>
                 </form>
 
-                {status && <p className="mt-4 text-sm text-green-600">{status}</p>} {/* Show status message */}
+                {status && <p className="mb-10 text-sm text-green-600">{status}</p>} {/* Show status message */}
         </>
     );
 };
