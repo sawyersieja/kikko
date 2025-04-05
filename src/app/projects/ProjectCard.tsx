@@ -2,23 +2,42 @@ interface ProjectProps {
     title: string;
     description: string;
     tech: string[];
-    link: string;
+    link?: string;
 }
 
 const ProjectCard = ({ title, description, tech, link }: ProjectProps ) => {
-    return (
-        <div className="border p-4 rounded-lg bg-gray-900 shadow-md">
-            <h2 className="text-xl pb-4 font-bold !text-blue-300">{title}</h2>
-            <p className="text-gray-100 pb-6">{description}</p>
-            <div className="text-gray-800">
-                {tech.map((item, index) => (
-                    <span key={index} className="mr-2 last:mr-0 px-2 py-1 bg-transparent text-blue-300 border border-blue-300 rounded text-xs">
-                        {item}
-                    </span>
-                ))}
+
+    const content = (
+            
+        <div className="border border-gray-700 p-6 rounded-lg bg-gray-900 shadow-md flex flex-col justify-between h-full hover:ring-2 hover:ring-blue-400/50 hover:scale-[1.02] transition-all">
+            <div>
+                <h2 className="text-xl font-bold !text-blue-300 mb-2">{title}</h2>
+                <p className="text-gray-100 mb-4">{description}</p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                    {tech.map((item, index) => (
+                        <span key={index} className="px-2 py-1 bg-transparent font-medium text-blue-300 border border-blue-300 rounded text-sm">
+                            {item}
+                        </span>
+                    ))}
+                </div>
+                {!link && (
+                    <p className="text-sm italic text-gray-500">Demo not publicly available.</p>
+                )}
             </div>
-            <a href={link} target="_blank" className="text-blue-300 mt-6 mb-4 inline-block">View Project →</a>
         </div>
+    );
+
+    return link ? (
+        <a 
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block h-full"
+        >
+            {content}
+        </a>
+    ) : (
+        content
     );
 };
 
