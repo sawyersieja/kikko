@@ -11,9 +11,9 @@ const Hero = () => {
                     I&apos;m Sawyer, a Software Engineer
                 </h1>
                 <p className="mt-4 text-base sm:text-xl text-gray-300">
-                    I build practical software that solves real problems - clean, secure, and user-focused.
+                    I build reliable, scalable, and secure software - with a focus on the end user.
                 </p>
-                <a href="/projects" className="mt-6 inline-block px-6 py-3 bg-blue-700 hover:bg-blue-600 transition-colors rounded-lg font-medium animate-pulse hover:animate-none">
+                <a href="/projects" className="mt-6 inline-block px-6 py-3 bg-blue-700 hover:bg-blue-600 transition-colors rounded-lg font-medium">
                     See My Work
                 </a>
             </div>
