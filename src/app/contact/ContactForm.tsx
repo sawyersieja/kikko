@@ -8,14 +8,32 @@ const ContactForm = () => {
     const [message, setMessage] = useState("");
     const [status, setStatus] = useState<string | null>(null); // Fix later for status usage.
 
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault(); // Prevents page reload
         
-        setStatus("Message submitted!");
+        const formData = new FormData(e.currentTarget);
+
+        const body = new URLSearchParams(
+            Array.from(formData.entries()) as [string,string][]).toString();
         
-        // Reset form fields after submission.
-        setEmail("");
-        setMessage("");
+        try {
+            await fetch("/__forms.html", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body,
+            });
+
+            setStatus("Message submitted successfully!");
+
+            // Reset form fields after submission.
+            setEmail("");
+            setMessage("");
+
+        } catch (error) {
+            setStatus("There was an error submitting the form.");
+            console.error(error);
+        }
+
     };
     
     return (
