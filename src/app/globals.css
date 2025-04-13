@@ -2,13 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-  --font-sans: var(--font-inter);
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --foreground: #1a1a1a;
   --font-sans: var(--font-inter);
 }
 
@@ -29,6 +23,11 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans), sans-serif;
   @apply leading-relaxed tracking-normal;
+}
+
+.dark body {
+  background: var(--background);
+  color: var(--foreground);
 }
 
 h1 {
