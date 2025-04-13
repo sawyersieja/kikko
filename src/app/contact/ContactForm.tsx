@@ -66,7 +66,7 @@ const ContactForm = () => {
                     className="w-full p-2 border border-gray-300 rounded-md transition-all duration-500 focus:outline-none focus:border-blue-400 focus:ring-1 focus:ring-blue-400 focus:ring-opacity-50"
                 />
 
-                <label className="block font-medium mb-2">Subject:</label>
+                <label className="block font-medium mt-4 mb-2">Subject:</label>
                 <input
                     type="text"
                     name="subject"
