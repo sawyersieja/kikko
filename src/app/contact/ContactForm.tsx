@@ -5,6 +5,7 @@ import { useState } from "react";
 const ContactForm = () => {
     
     const [email, setEmail] = useState("");
+    const [subject, setSubject] = useState("");
     const [message, setMessage] = useState("");
     const [status, setStatus] = useState<string | null>(null); // Fix later for status usage.
 
@@ -27,6 +28,7 @@ const ContactForm = () => {
 
             // Reset form fields after submission.
             setEmail("");
+            setSubject("");
             setMessage("");
 
         } catch (error) {
@@ -60,6 +62,16 @@ const ContactForm = () => {
                     name="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
+                    required
+                    className="w-full p-2 border border-gray-300 rounded-md transition-all duration-500 focus:outline-none focus:border-blue-400 focus:ring-1 focus:ring-blue-400 focus:ring-opacity-50"
+                />
+
+                <label className="block font-medium mb-2">Subject:</label>
+                <input
+                    type="text"
+                    name="subject"
+                    value={subject}
+                    onChange={(e) => setSubject(e.target.value)}
                     required
                     className="w-full p-2 border border-gray-300 rounded-md transition-all duration-500 focus:outline-none focus:border-blue-400 focus:ring-1 focus:ring-blue-400 focus:ring-opacity-50"
                 />
