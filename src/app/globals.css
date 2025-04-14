@@ -3,14 +3,33 @@
 :root {
   --background: #ffffff;
   --foreground: #1a1a1a;
+  --card: #f1f5f9;
+  --border: #e5e7eb;
+  --accent: #2563eb;
+  --muted: #6b7280;
+  --primary: #1d4ed8;
+  --secondary: #3b82f6;
+  --navbar: #ffffff;
+  --footer: #f3f4f6;
+  --overlay: rgba(0, 0, 0, 0.4);
+
   --font-sans: var(--font-inter);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
+.dark {
     --background: #0a0a0a;
     --foreground: #ededed;
-  }
+    --card: #1e293b;
+    --border: #374151;
+    --accent: #60a5fa;
+    --muted: #9ca3af;
+    --primary: #3b82f6;
+    --secondary: #93c5fd;
+    --navbar: #111827;
+    --footer: #1f2937;
+    --overlay: rgba(0, 0, 0, 0.5);
+
+    --font-sans: var(--font-inter);
 }
 
 html {
@@ -40,4 +59,12 @@ h2 {
 
 h3 {
   @apply text-xl font-medium text-gray-700 dark:text-gray-300;
+}
+
+p {
+  @apply text-gray-700 dark:text-gray-300;
+}
+
+li {
+  @apply text-gray-700 dark:text-gray-300;
 }

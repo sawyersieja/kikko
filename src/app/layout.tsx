@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en-US">
+    <html lang="en-US" className="dark" suppressHydrationWarning>
       <body className={`${inter.variable} flex flex-col min-h-screen`}>
         <Navbar />
         <main className="flex flex-grow flex-col">
