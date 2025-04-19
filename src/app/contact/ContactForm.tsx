@@ -46,6 +46,7 @@ const ContactForm = () => {
                 data-netlify="true"
                 netlify-honeypot="bot-field"
                 onSubmit={handleSubmit}
+                className="text-foreground"
             >
                 <input type="hidden" name="form-name" value="contact" />
 
@@ -56,45 +57,45 @@ const ContactForm = () => {
                     </label>
                 </p>
 
-                <label className="block font-medium mb-2">Email:</label>
+                <label className="block font-medium mb-2 text-foreground">Email:</label>
                 <input 
                     type="email"
                     name="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required
-                    className="w-full p-2 border border-gray-300 rounded-md transition-all duration-500 focus:outline-none focus:border-blue-400 focus:ring-1 focus:ring-blue-400 focus:ring-opacity-50"
+                    className="w-full p-2 bg-card text-foreground border border-border focus-border-accent rounded-md transition-all duration-500 focus:outline-none focus:border-accent focus:ring-1 focus-ring-accent drop-shadow-sm"
                 />
 
-                <label className="block font-medium mt-4 mb-2">Subject:</label>
+                <label className="block font-medium mt-4 mb-2 text-foreground">Subject:</label>
                 <input
                     type="text"
                     name="subject"
                     value={subject}
                     onChange={(e) => setSubject(e.target.value)}
                     required
-                    className="w-full p-2 border border-gray-300 rounded-md transition-all duration-500 focus:outline-none focus:border-blue-400 focus:ring-1 focus:ring-blue-400 focus:ring-opacity-50"
+                    className="w-full p-2 bg-card text-foreground border-1 border-border focus-border-accent rounded-md transition-all duration-500 focus:outline-none focus-border-accent focus:ring-1 focus-ring-accent drop-shadow-sm"
                 />
 
-                <label className="block font-medium mt-4 mb-2">Message:</label>
+                <label className="block font-medium mt-4 mb-2 text-foreground">Message:</label>
                 <textarea 
                     name="message"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     required
-                    className="w-full p-2 border border-gray-300 rounded-md h-50 transition-all duration-500 focus:outline-none focus:border-blue-400 focus:ring-1 focus:ring-blue-400 focus:ring-opacity-50"
+                    className="w-full p-2 bg-card text-foreground border-1 border-border focus-border-accent rounded-md h-50 transition-all duration-500 focus:outline-none focus-border-accent focus:ring-1 focus-ring-accent focus:ring-opacity-50 drop-shadow-sm"
                 />
 
                 <button 
                     type="submit"
-                    className="mt-6 mb-10 font-medium bg-blue-600 text-white px-4 py-2 rounded-md"
+                    className="mt-6 mb-10 font-medium bg-primary hover-bg-accent text-white px-4 py-2 rounded-md transition-all hover:scale-[1.02] drop-shadow-sm"
                 >
                     Send
                 </button>
 
             </form>
 
-            {status && <p className="mb-10 text-sm text-green-600">{status}</p>} {/* Show status message */}
+            {status && <p className="mb-10 text-sm font-bold tracking-wide text-blue-700 dark:text-blue-400">{status}</p>} {/* Show status message */}
         </>
     );
 };

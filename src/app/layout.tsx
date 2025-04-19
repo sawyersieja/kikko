@@ -21,7 +21,26 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en-US">
+    <html lang="en-US" className="dark" suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  var theme = document.cookie
+                    .split('; ')
+                    .find(row => row.startsWith('theme='))
+                    ?.split('=')[1];
+                  if (!theme || theme === 'dark') {
+                    document.documentElement.classList.add('dark');
+                  }
+                } catch (e) {}
+              })();
+            `,
+          }}
+        />
+    </head>
       <body className={`${inter.variable} flex flex-col min-h-screen`}>
         <Navbar />
         <main className="flex flex-grow flex-col">
