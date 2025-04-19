@@ -13,8 +13,8 @@ const ThemeToggle = () => {
         const prefersDark = !savedTheme || savedTheme === "dark";
 
         setIsDark(prefersDark);
-        document.documentElement.classList.toggle("dark", prefersDark);
-        document.documentElement.classList.toggle("light", !prefersDark);
+        document.documentElement.classList.remove("dark", "light");
+        document.documentElement.classList.add(prefersDark ? "dark" : "light");
     }, []);
 
     const toggleTheme = () => {
@@ -22,8 +22,8 @@ const ThemeToggle = () => {
         setIsDark(!isDark);
         Cookies.set("theme", newTheme, { expires: 365 });
 
-        document.documentElement.classList.toggle("dark", newTheme === "dark");
-        document.documentElement.classList.toggle("light", newTheme === "light");
+        document.documentElement.classList.remove("dark", "light");
+        document.documentElement.classList.add(newTheme);
     }
     
     return (
