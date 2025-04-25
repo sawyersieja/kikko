@@ -1,4 +1,10 @@
+import { Metadata } from "next";
 import ProjectCard from "./ProjectCard";
+
+export const metadata: Metadata = {
+    title: "Projects | Sawyer",
+    description: "Explore a collection of Sawyer’s development projects — showcasing skills in web development, design, and creative problem solving.",
+};
 
 interface Project {
     title: string;
