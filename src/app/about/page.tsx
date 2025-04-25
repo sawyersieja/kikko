@@ -1,7 +1,13 @@
+import { Metadata } from "next";
 import AboutSummary from "./AboutSummary";
 import CTA from "./CTA";
 import Highlights from "./Highlights";
 import Skills from "./Skills";
+
+export const metadata: Metadata = {
+    title: "About Sawyer - Software Engineer",
+    description: "Learn more about Sawyer — a developer passionate about building interactive experiences and thoughtful digital solutions.",
+};
 
 const About = () => {
     return(

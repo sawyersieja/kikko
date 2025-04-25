@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import ContactForm from "./ContactForm";
+
+export const metadata: Metadata = {
+    title: "Contact | Sawyer",
+    description: "Send Sawyer a message — for work, ideas, or just to connect!",
+};
 
 const Contact = () => {
 
