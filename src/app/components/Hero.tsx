@@ -4,11 +4,11 @@ const Hero = () => {
     return (
         <section 
             className="relative bg-cover bg-center bg-no-repeat flex-1 flex flex-col justify-center text-foreground text-center px-4"
-            style={{ backgroundImage: "url('/images/hero-mountain.jpg')"}}
+            style={{ backgroundImage: "url('/images/hero-waves.jpg')"}}
         >
-            <div className="absolute inset-0 z-0 bg-white/60 dark:bg-black/30 backdrop-blur-xs" />
+            <div className="absolute inset-0 z-0 bg-white/60 dark:bg-black/30" />
 
-            <div className="relative z-10 backdrop-blur-md bg-card/80 rounded-xl p-10 max-w-3xl mx-auto shadow-xl">
+            <div className="relative z-10 bg-gray-700/40 backdrop-blur-xs rounded-xl p-10 max-w-3xl mx-auto shadow-xl">
                 <h1 className="text-4xl sm:text-5xl font-bold leading-tight text-white drop-shadow-md">
                     I&apos;m Sawyer, a Software Engineer
                 </h1>
