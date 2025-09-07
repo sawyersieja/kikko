@@ -14,6 +14,12 @@ interface Project {
 }
 
 const projects: Project[] = [
+    {
+        title: "Simple Procure",
+        description: "Prototype that ingests RFPs and vendor proposals, extracts key points, generates a weighted scoring matrix, and summarizes best option in exportable CSV. Built at the DxHub/AWS AI camp.",
+        tech: ["Python","AWS","Amazon Bedrock", "Claude 3.5 Sonnet"],
+        link: "https://github.com/sawyersieja/team18-procurement",
+    },
     {   
         title: "Portfolio Website",
         description: "A modern personal portfolio built with Next.js and TypeScript to showcase my work, skills, and experience. Focused on clean UI, responsive design, and maintainable code.",
