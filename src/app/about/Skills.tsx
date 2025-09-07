@@ -12,6 +12,7 @@ const Skills = () => {
             "Git/Github",
             "Node.js",
             "AWS",
+            "Amazon Bedrock",
 
         ],
         familiar: [
@@ -32,7 +33,7 @@ const Skills = () => {
         ],
         improving: [
             "Rust",
-            "Go"
+            "Go",
         ]
     };
 
