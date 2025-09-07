@@ -1,9 +1,39 @@
 const Skills = () => {
 
     const skills: { confident: string[], familiar: string[], improving: string[] } = {
-        confident: ["C++", "Java", "HTML", "CSS", "JavaScript", "Git"],
-        familiar: ["TypeScript", "Solidity", "React", "Next.js", "Tailwind", "PHP", "MySQL"],
-        improving: ["Python", "Rust", "Node.js", "Go"]
+        confident: [
+            "C++",
+            "Java",
+            "Python",
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
+            "Git/Github",
+            "Node.js",
+            "AWS",
+
+        ],
+        familiar: [
+            "TypeScript",
+            "Solidity",
+            "Foundry",
+            "Next.js",
+            "Tailwind",
+            "PHP",
+            "MySQL",
+            "PostgreSQL",
+            "SQLite",
+            "Supabase",
+            "Vercel",
+            "Azure",
+            "GCP",
+
+        ],
+        improving: [
+            "Rust",
+            "Go"
+        ]
     };
 
     return (
