@@ -29,6 +29,7 @@ const Skills = () => {
             "Vercel",
             "Azure",
             "GCP",
+            "Tableau",
 
         ],
         improving: [
