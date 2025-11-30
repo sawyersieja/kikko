@@ -15,8 +15,14 @@ interface Project {
 
 const projects: Project[] = [
     {
+        title:"AI State Requirements",
+        description:"An AI prototype built for the SDSU AWS/DxHub AI hackathon, designed to help educators verify their online lessons meet state standards. The application combines document analysis, knowledge base retrieval, and AI-powered insights to provide comprehensive educational support.",
+        tech: ["Python", "AWS", "Amazon Bedrock", "RAG", "Knowledge Bases", "Vector Embeddings", "Amazon Kendra"],
+        link:"https://github.com/sawyersieja/sdsu-ai-hackathon-team-1",
+    },
+    {
         title: "Simple Procure",
-        description: "Prototype that ingests RFPs and vendor proposals, extracts key points, generates a weighted scoring matrix, and summarizes best option in exportable CSV. Built at the DxHub/AWS AI camp.",
+        description: "Prototype that ingests RFPs and vendor proposals, extracts key points, generates a weighted scoring matrix, and summarizes best option in exportable CSV. Built at the Cal Poly SLO DxHub/AWS AI camp.",
         tech: ["Python","AWS","Amazon Bedrock", "Claude 3.5 Sonnet"],
         link: "https://github.com/sawyersieja/team18-procurement",
     },
