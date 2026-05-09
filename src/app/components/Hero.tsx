@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const keywords = ["Software Engineer", "Full-Stack", "Cloud", "AI", "Blockchain", "Cybersecurity", "Networking"];
+const keywords = [, "Full-Stack", "AI", "Cloud", "Networking", "Cybersecurity", "Blockchain"];
 
 const Hero = () => {
   return (
@@ -9,14 +9,12 @@ const Hero = () => {
 
       <div className="mx-auto w-full max-w-3xl">
         <div className="rounded-2xl border border-border bg-card p-8 shadow-lg backdrop-blur-sm sm:p-10">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-muted">Hi, I'm Sawyer</p>
-
-          <h1 className="mt-3 text-4xl font-bold leading-tight text-foreground sm:text-5xl">
-            Software Engineer
+          <h1 className="text-4xl leading-tight text-foreground sm:text-5xl">
+            Hi, I'm <span className="text-foreground font-bold">Sawyer</span>
           </h1>
 
           <p className="mt-4 max-w-2xl text-base text-muted sm:text-lg">
-            I build practical, secure software across full-stack, cloud, AI, and blockchain domains with hands-on cybersecurity and networking experience.
+            I'm a <span className="font-bold">Software Engineer</span> that builds practical, secure software across <b>AI</b>, <b>Cloud</b>, and <b>Blockchain</b> domains with hands-on Cybersecurity and Networking experience.
           </p>
 
           <div className="mt-6 flex flex-wrap gap-2">
@@ -31,10 +29,10 @@ const Hero = () => {
           </div>
 
           <Link
-            href="/projects"
+            href="/about"
             className="mt-8 inline-block rounded-lg bg-primary px-6 py-3 font-semibold text-white transition-transform hover-bg-accent hover:scale-[1.02]"
           >
-            View Projects
+            About me
           </Link>
         </div>
       </div>
