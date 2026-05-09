@@ -33,13 +33,13 @@ const Hero = () => {
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
               href="/projects"
-              className="inline-block rounded-lg bg-primary px-6 py-3 font-semibold text-white transition-transform hover-bg-accent hover:scale-[1.02]"
+              className="inline-block rounded-lg bg-primary px-6 py-3 font-semibold text-white transition-transform hover-bg-primary hover:scale-[1.02]"
             >
               View Projects
             </Link>
             <Link
               href="/about"
-              className="inline-block rounded-lg border border-border bg-card px-6 py-3 font-semibold text-foreground transition-transform hover-bg-accent hover:scale-[1.02]"
+              className="inline-block rounded-lg border border-border bg-background px-6 py-3 font-semibold text-foreground shadow-sm transition-transform hover-border-accent hover-bg-accent hover:scale-[1.02]"
             >
               About Me
             </Link>
