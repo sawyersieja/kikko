@@ -9,14 +9,14 @@ const Hero = () => {
 
       <div className="mx-auto w-full max-w-3xl">
         <div className="rounded-2xl border border-border bg-card p-8 shadow-lg backdrop-blur-sm sm:p-10">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-muted">Sawyer</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-muted">Hi, I'm Sawyer</p>
 
           <h1 className="mt-3 text-4xl font-bold leading-tight text-foreground sm:text-5xl">
             Software Engineer
           </h1>
 
           <p className="mt-4 max-w-2xl text-base text-muted sm:text-lg">
-            I build practical, secure software across full-stack, cloud, AI, and blockchain, informed by hands-on cybersecurity and networking experience.
+            I build practical, secure software across full-stack, cloud, AI, and blockchain domains with hands-on cybersecurity and networking experience.
           </p>
 
           <div className="mt-6 flex flex-wrap gap-2">
