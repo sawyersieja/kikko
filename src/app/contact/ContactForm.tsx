@@ -74,7 +74,7 @@ const ContactForm = () => {
                     value={subject}
                     onChange={(e) => setSubject(e.target.value)}
                     required
-                    className="w-full p-2 bg-card text-foreground border-1 border-border focus-border-accent rounded-md transition-all duration-500 focus:outline-none focus-border-accent focus:ring-1 focus-ring-accent drop-shadow-sm"
+                    className="w-full p-2.5 bg-card text-foreground border border-border focus-border-accent rounded-md transition-all duration-500 focus:outline-none focus-border-accent focus:ring-1 focus-ring-accent drop-shadow-sm"
                 />
 
                 <label className="block font-medium mt-4 mb-2 text-foreground">Message:</label>
@@ -83,19 +83,19 @@ const ContactForm = () => {
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     required
-                    className="w-full p-2 bg-card text-foreground border-1 border-border focus-border-accent rounded-md h-50 transition-all duration-500 focus:outline-none focus-border-accent focus:ring-1 focus-ring-accent focus:ring-opacity-50 drop-shadow-sm"
+                    className="w-full p-2.5 bg-card text-foreground border border-border focus-border-accent rounded-md min-h-44 transition-all duration-500 focus:outline-none focus-border-accent focus:ring-1 focus-ring-accent focus:ring-opacity-50 drop-shadow-sm"
                 />
 
                 <button 
                     type="submit"
-                    className="mt-6 mb-10 font-medium bg-primary hover-bg-accent text-white px-4 py-2 rounded-md transition-all hover:scale-[1.02] drop-shadow-sm"
+                    className="mt-6 mb-10 text-sm sm:text-base font-semibold bg-primary hover-bg-accent text-white px-5 py-2.5 rounded-md transition-all hover:scale-[1.02] drop-shadow-sm"
                 >
                     Send
                 </button>
 
             </form>
 
-            {status && <p className="mb-10 text-sm font-bold tracking-wide text-blue-700 dark:text-blue-400">{status}</p>} {/* Show status message */}
+            {status && <p className="mb-10 text-sm font-semibold tracking-wide text-brand">{status}</p>} {/* Show status message */}
         </>
     );
 };
