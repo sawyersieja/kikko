@@ -29,10 +29,10 @@ const Hero = () => {
           </div>
 
           <Link
-            href="/projects"
+            href="/about"
             className="mt-8 inline-block rounded-lg bg-primary px-6 py-3 font-semibold text-white transition-transform hover-bg-accent hover:scale-[1.02]"
           >
-            View Projects
+            About me
           </Link>
         </div>
       </div>
