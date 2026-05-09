@@ -15,6 +15,8 @@ const focusAreas = [
   },
 ];
 
+const keywordChips = ["Sawyer", "Software", "Technology", "Security"];
+
 const Hero = () => {
   return (
     <section className="relative flex-1 py-14 sm:py-20">
@@ -23,15 +25,30 @@ const Hero = () => {
       <div className="mx-auto flex w-full max-w-4xl flex-col gap-10">
         <div className="rounded-2xl border border-border bg-card/85 p-8 shadow-lg backdrop-blur-sm sm:p-10">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-muted">
-            Hello, I&apos;m Sawyer
+            Hello, I&apos;m
           </p>
 
-          <h1 className="mt-4 text-4xl font-bold leading-tight text-foreground sm:text-5xl">
-            I build secure, reliable technology that solves real problems.
+          <h1 className="mt-3 text-5xl font-black leading-tight text-foreground sm:text-6xl md:text-7xl">
+            Sawyer
           </h1>
 
+          <p className="mt-3 text-xl font-semibold text-primary sm:text-2xl">
+            Software Engineer in Technology &amp; Security
+          </p>
+
+          <div className="mt-5 flex flex-wrap gap-2">
+            {keywordChips.map((chip) => (
+              <span
+                key={chip}
+                className="rounded-full border border-border bg-background px-3 py-1 text-xs font-bold uppercase tracking-[0.15em] text-muted"
+              >
+                {chip}
+              </span>
+            ))}
+          </div>
+
           <p className="mt-5 max-w-2xl text-base text-muted sm:text-lg">
-            I&apos;m a software engineer focused on practical systems design, cybersecurity, and networking. This site is where I share projects, experience, and the work I&apos;m most proud of.
+            I build practical systems with strong engineering fundamentals across application development, cybersecurity, and networking.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
