@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-transparent via-primary/5 to-transparent dark:from-transparent dark:via-primary/10 dark:to-transparent" />
 
       <div className="mx-auto w-full max-w-3xl">
-        <div className="rounded-2xl border border-border bg-card/95 p-8 shadow-lg backdrop-blur-sm sm:p-10 dark:bg-[#162236]">
+        <div className="rounded-2xl border border-border bg-card p-8 shadow-lg backdrop-blur-sm sm:p-10">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-muted">Sawyer</p>
 
           <h1 className="mt-3 text-4xl font-bold leading-tight text-foreground sm:text-5xl">
