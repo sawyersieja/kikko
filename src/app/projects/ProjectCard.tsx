@@ -21,7 +21,7 @@ const ProjectCard = ({ title, description, tech, link }: ProjectProps ) => {
                     ))}
                 </div>
                 {!link && (
-                    <p className="text-sm italic text-muted">Demo not publicly available.</p>
+                    <p className="text-sm italic text-muted">Repo not publicly available.</p>
                 )}
             </div>
         </div>
