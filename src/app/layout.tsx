@@ -24,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en-US" className="dark" suppressHydrationWarning>
+    <html lang="en-US" suppressHydrationWarning>
       <head>
         <script
           dangerouslySetInnerHTML={{
@@ -35,9 +35,8 @@ export default function RootLayout({
                     .split('; ')
                     .find(row => row.startsWith('theme='))
                     ?.split('=')[1];
-                  if (!theme || theme === 'dark') {
-                    document.documentElement.classList.add('dark');
-                  }
+                  document.documentElement.classList.remove('dark', 'light');
+                  document.documentElement.classList.add(!theme || theme === 'dark' ? 'dark' : 'light');
                 } catch (e) {}
               })();
             `,

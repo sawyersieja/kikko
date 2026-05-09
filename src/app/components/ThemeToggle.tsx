@@ -9,12 +9,13 @@ const ThemeToggle = () => {
 
     useEffect(() => {
 
+        const root = document.documentElement;
         const savedTheme = Cookies.get("theme");
-        const prefersDark = !savedTheme || savedTheme === "dark";
+        const prefersDark = savedTheme ? savedTheme === "dark" : root.classList.contains("dark");
 
         setIsDark(prefersDark);
-        document.documentElement.classList.remove("dark", "light");
-        document.documentElement.classList.add(prefersDark ? "dark" : "light");
+        root.classList.remove("dark", "light");
+        root.classList.add(prefersDark ? "dark" : "light");
     }, []);
 
     const toggleTheme = () => {
@@ -22,8 +23,9 @@ const ThemeToggle = () => {
         setIsDark(!isDark);
         Cookies.set("theme", newTheme, { expires: 365 });
 
-        document.documentElement.classList.remove("dark", "light");
-        document.documentElement.classList.add(newTheme);
+        const root = document.documentElement;
+        root.classList.remove("dark", "light");
+        root.classList.add(newTheme);
     }
     
     return (
