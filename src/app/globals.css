@@ -15,6 +15,10 @@
   --navbar: #f8fafc;
   --footer: #f1f5f9;
   --overlay: rgba(15, 23, 42, 0.45);
+  --surface: #eef2f7;
+  --success: #15803d;
+  --info: #0f766e;
+  --brand: #1d4ed8;
 
   --font-sans: var(--font-inter);
 }
@@ -31,6 +35,10 @@
     --navbar: #0f172a;
     --footer: #111c30;
     --overlay: rgba(2, 6, 23, 0.6);
+    --surface: #1b263a;
+    --success: #4ade80;
+    --info: #5eead4;
+    --brand: #93c5fd;
 
     --font-sans: var(--font-inter);
 }
@@ -114,6 +122,10 @@ body {
     background-color: var(--footer);
   }
 
+  .bg-surface {
+    background-color: var(--surface);
+  }
+
   .border-border {
     border-color: var(--border);
   }
@@ -144,5 +156,29 @@ body {
 
   .focus-ring-accent:focus {
     --tw-ring-color: var(--accent);
+  }
+
+  .text-success {
+    color: var(--success);
+  }
+
+  .text-info {
+    color: var(--info);
+  }
+
+  .text-brand {
+    color: var(--brand);
+  }
+
+  .border-success {
+    border-color: var(--success);
+  }
+
+  .border-info {
+    border-color: var(--info);
+  }
+
+  .border-brand {
+    border-color: var(--brand);
   }
 }
