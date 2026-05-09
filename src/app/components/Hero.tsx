@@ -30,12 +30,20 @@ const Hero = () => {
             ))}
           </div>
 
-          <Link
-            href="/projects"
-            className="mt-8 inline-block rounded-lg bg-primary px-6 py-3 font-semibold text-white transition-transform hover-bg-accent hover:scale-[1.02]"
-          >
-            View Projects
-          </Link>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <Link
+              href="/projects"
+              className="inline-block rounded-lg bg-primary px-6 py-3 font-semibold text-white transition-transform hover-bg-accent hover:scale-[1.02]"
+            >
+              View Projects
+            </Link>
+            <Link
+              href="/about"
+              className="inline-block rounded-lg border border-border bg-background px-6 py-3 font-semibold text-foreground transition-transform hover:scale-[1.02]"
+            >
+              About Me
+            </Link>
+          </div>
         </div>
       </div>
     </section>
