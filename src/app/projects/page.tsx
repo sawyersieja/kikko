@@ -15,6 +15,12 @@ interface Project {
 
 const projects: Project[] = [
     {
+        title:"Project X-plain",
+        description:"Completed a year long capstone project working with the x-ray company Creative Electron, creating an integrated AI chatbot application capable of assisting techs obtain optimal x-ray imaging.",
+        tech: ["Python", "PySide 6", "AWS", "Amazon Bedrock", "Chroma", "RAG", "Prompt Engineering"],
+        link:"",
+    },
+    {
         title:"AI State Requirements",
         description:"An AI prototype built for the SDSU AWS/DxHub AI hackathon, designed to help educators verify their online lessons meet state standards. The application combines document analysis, knowledge base retrieval, and AI-powered insights to provide comprehensive educational support.",
         tech: ["Python", "AWS", "Amazon Bedrock", "RAG", "Knowledge Bases", "Vector Embeddings", "Amazon Kendra"],

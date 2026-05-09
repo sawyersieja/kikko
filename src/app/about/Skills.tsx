@@ -1,18 +1,21 @@
 const Skills = () => {
 
-    const skills: { confident: string[], familiar: string[], improving: string[] } = {
+    const skills: { confident: string[], familiar: string[],} = {
         confident: [
             "C++",
             "Java",
             "Python",
             "HTML",
             "CSS",
+            "Tailwind",
             "JavaScript",
             "React",
             "Git/Github",
             "Node.js",
             "AWS",
             "Amazon Bedrock",
+            "Networking",
+            "AI",
 
         ],
         familiar: [
@@ -20,7 +23,6 @@ const Skills = () => {
             "Solidity",
             "Foundry",
             "Next.js",
-            "Tailwind",
             "PHP",
             "MySQL",
             "PostgreSQL",
@@ -29,13 +31,8 @@ const Skills = () => {
             "Vercel",
             "Azure",
             "GCP",
-            "Tableau",
 
         ],
-        improving: [
-            "Rust",
-            "Go",
-        ]
     };
 
     return (
@@ -52,18 +49,9 @@ const Skills = () => {
             </div>
 
             <h3 className="text-xl font-bold mt-6 mb-4 text-info">Familiar:</h3>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2 mb-6">
                 {skills.familiar.map((skill, index) => (
                     <span key={index} className="px-2 py-1 bg-surface text-info font-semibold border border-info rounded-md text-sm tracking-wide">
-                        {skill}
-                    </span>
-                ))}
-            </div>
-
-            <h3 className="text-xl font-bold mt-6 mb-4 text-brand">Dabbling:</h3>
-            <div className="flex flex-wrap gap-2 mb-6">
-                {skills.improving.map((skill, index) => (
-                    <span key={index} className="px-2 py-1 bg-surface text-brand font-semibold border border-brand rounded-md text-sm tracking-wide">
                         {skill}
                     </span>
                 ))}
