@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const keywords = ["Software Engineer", "Full-Stack", "Cloud", "AI", "Blockchain", "Cybersecurity", "Networking"];
+const keywords = ["Full-Stack", "Cloud", "AI", "Blockchain", "Cybersecurity", "Networking"];
 
 const Hero = () => {
   return (
@@ -9,10 +9,8 @@ const Hero = () => {
 
       <div className="mx-auto w-full max-w-3xl">
         <div className="rounded-2xl border border-border bg-card p-8 shadow-lg backdrop-blur-sm sm:p-10">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-muted">Hi, I'm Sawyer</p>
-
-          <h1 className="mt-3 text-4xl font-bold leading-tight text-foreground sm:text-5xl">
-            Software Engineer
+          <h1 className="text-4xl font-bold leading-tight text-foreground sm:text-5xl">
+            Hi, I'm <span className="text-primary">Sawyer</span>
           </h1>
 
           <p className="mt-4 max-w-2xl text-base text-muted sm:text-lg">
